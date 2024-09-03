@@ -2,7 +2,6 @@
 
 pragma solidity 0.8.26;
 
-
 import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol";
 import {PriceConverter} from "./PriceConverter.sol";
 
@@ -37,7 +36,6 @@ contract FundMe {
 
     // Functions Order:
     // constructor -> receive -> fallback -> external -> public -> internal -> private -> view / pure
-   
 
     constructor(address priceFeed) {
         s_priceFeed = AggregatorV3Interface(priceFeed);
